@@ -1,6 +1,6 @@
 #!/bin/bash -l
 
-cmd="openscad -o $GITHUB_WORKSPACE/$2 $GITHUB_WORKSPACE/$1"
+cmd="openscad-nightly -o $GITHUB_WORKSPACE/$2 $GITHUB_WORKSPACE/$1"
 
 if [[ -n "$3" ]]; then
   cmd="$cmd -p $GITHUB_WORKSPACE/$3"
